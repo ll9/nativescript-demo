@@ -4,30 +4,21 @@
             <Label class="action-bar-title" text="Home"></Label>
         </ActionBar>
         <StackLayout>
-            <TextField hint="E-Mail" />
-            <TextField hint="Password" />
-            <Button text="Next" @tap="navigate"></Button>
+            <TextField hint="Ort" />
+            <TextField hint="Straße" />
+            <TextField hint="Hausnummer" />
+            <Button text="Previous" @tap="$navigateBack"></Button>
+            <Button text="Weiter"></Button>
         </StackLayout>
     </Page>
 </template>
 
 <script>
-import Data from "./Data";
-
     export default {
-        methods: {
-            navigate() {
-                this.$navigateTo(Data);
-            }
-        },
         computed: {
             message() {
-                alert(this.Data)
                 return "Blank {N}-Vue app";
             }
-        },
-        components: {
-            Data
         }
     };
 </script>

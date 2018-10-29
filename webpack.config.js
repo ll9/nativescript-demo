@@ -111,7 +111,7 @@ module.exports = env => {
             "fs": "empty",
             "__dirname": false,
         },
-        devtool: "none",
+        devtool: '#eval-source-map',
         optimization: {
             splitChunks: {
                 cacheGroups: {
@@ -131,6 +131,7 @@ module.exports = env => {
             minimize: Boolean(production),
             minimizer: [
                 new UglifyJsPlugin({
+                    sourceMap: true,
                     parallel: true,
                     cache: true,
                     uglifyOptions: {
