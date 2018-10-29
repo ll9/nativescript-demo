@@ -4,32 +4,18 @@
             <Label class="action-bar-title" text="Home"></Label>
         </ActionBar>
         <StackLayout>
-            <TextField hint="Ort" />
-            <TextField hint="Straße" />
-            <TextField hint="Hausnummer" />
-            <Button text="Previos" @tap="$navigateBack"></Button>
-            <Button text="Weiter" @tap="navigate"></Button>
+            <Button text="Previous" @tap="$navigateBack"></Button>
+            <Button text="Abschicken"></Button>
         </StackLayout>
     </Page>
 </template>
 
 <script>
-import FinalPage from './FinalPage';
-
     export default {
         computed: {
             message() {
                 return "Blank {N}-Vue app";
             }
-        },
-        methods: {
-            navigate() {
-                // alert("bla")
-                this.$navigateTo(FinalPage);
-            }
-        },
-        components: {
-            FinalPage,
         }
     };
 </script>
