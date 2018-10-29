@@ -3,10 +3,12 @@
         <ActionBar class="action-bar">
             <Label class="action-bar-title" text="Home"></Label>
         </ActionBar>
+        <FlexboxLayout style="justify-content: center">
         <StackLayout>
             <Button text="Previous" @tap="$navigateBack"></Button>
             <Button text="Abschicken"></Button>
         </StackLayout>
+        </FlexboxLayout>
     </Page>
 </template>
 

@@ -7,7 +7,7 @@
             <TextField hint="Ort" />
             <TextField hint="Straße" />
             <TextField hint="Hausnummer" />
-            <Button text="Previos" @tap="$navigateBack"></Button>
+            <Button text="Previous" @tap="$navigateBack"></Button>
             <Button text="Weiter" @tap="navigate"></Button>
         </StackLayout>
     </Page>
