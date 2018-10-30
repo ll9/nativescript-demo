@@ -4,7 +4,7 @@
             <Label class="action-bar-title" text="Home"></Label>
         </ActionBar>
         <StackLayout>
-            <TextField hint="Ort" />
+            <TextField hint="Ort" v-model="ort" />
             <TextField hint="Straße" />
             <TextField hint="Hausnummer" />
             <Button text="Previous" @tap="$navigateBack"></Button>
@@ -20,6 +20,11 @@ import FinalPage from './FinalPage';
         computed: {
             message() {
                 return "Blank {N}-Vue app";
+            }
+        },
+        data: function() {
+            return {
+                ort: "amerang",
             }
         },
         methods: {
